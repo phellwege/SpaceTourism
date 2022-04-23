@@ -24,7 +24,7 @@ h4 {
 h5 {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 25px;
-  font-kerning: 4.75;
+  letter-spacing: 4.75;
   color: #D0D6F9;
 }
 #subheading1 {
@@ -35,13 +35,13 @@ h5 {
 #subheading2 {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 14px;
-  font-kerning:2.35;
+  letter-spacing: 2.35;
   color: #FFFFFF;
 }
 #navText {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 16px;
-  font-kerning: 2.7;
+  letter-spacing: 2.7;
   color: #FFFFFF;
 }
 p {
