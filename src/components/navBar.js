@@ -9,7 +9,7 @@ export default (props) => {
     };
     return (
         <div id="navBarWrap">
-            <div></div>
+            <div>icon</div>
             <div><p>-------------------------------------</p></div>
             <div id='navBarLinks'>
             <ul >
