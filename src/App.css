@@ -46,7 +46,7 @@ h5 {
 }
 p {
   font-family: 'Bellefair', serif;
-  color: #FFFFFF;
+  color: #D0D6F9;
 }
 
 
@@ -90,13 +90,63 @@ p {
 }
 #HomeBkg {
   background-image: url('./static/home/background-home-desktop.jpg');
+  height: 100vh;
+}
+#HomeWrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 #CrewBkg {
   background-image: url('./static/crew/background-crew-desktop.jpg');
+  height: 100vh;
 }
 #TechBkg {
   background-image: url('./static/technology/background-technology-desktop.jpg');
+  height: 100vh;
 }
 #DestBkg {
   background-image: url('./static/destination/background-destination-desktop.jpg');
+  height: 100vh;
+}
+#navBarWrap {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 2%;
+}
+#navBarLinks {
+  background-blend-mode: lighten;
+  backdrop-filter: blur(20px);
+  width: 40%;
+}
+#navBarWrap ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+#navBarWrap ul a {
+  text-decoration: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  font-kerning: 2.7;
+  color: #FFFFFF;
+}
+#navBarWrap ul a:Hover {
+  text-decoration: underline;
+}
+#navBarWrap ul a:Active {
+  text-decoration: underline;
+  color: white;
+}
+#ExploreCircle {
+  background: #FFFFFF;
+  border-radius:50%;
+  width: 225%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#ExploreCircle a h4  {
+  color: black;
 }
