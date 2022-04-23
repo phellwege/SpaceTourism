@@ -1,41 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 
-
-/* h1 {
-  bellefair regular - 150px
+h1 {
+  font-family: 'Bellefair', serif;
+  font-size: 150px;
   color: #FFFFFF;
 } 
 h2 {
-  bellefair regular - 100px
+  font-family: 'Bellefair', serif;
+  font-size: 100px;
   color: #FFFFFF;
 }
 h3 {
-  bellefair regular - 56px
+  font-family: 'Bellefair', serif;
+  font-size: 56px;
   color: #FFFFFF;
 }
 h4 {
-  bellefair regular - 32
+  font-family: 'Bellefair', serif;
+  font-size: 32px;
   color: #FFFFFF;
 }
 h5 {
-  barlow condensensed regular - 25px - 4.75 char spacing
-  color: D0D6F9;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 25px;
+  font-kerning: 4.75;
+  color: #D0D6F9;
 }
 #subheading1 {
-  bellefair regular -28px
+  font-family: 'Bellefair', serif;
+  font-size: 28px;
   color: #FFFFFF;
 }
 #subheading2 {
-  barlow condensed regular - 14px - 2.35 char spacing
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  font-kerning:2.35;
   color: #FFFFFF;
 }
 #navText {
-  barlow condensensed regular - 16px - 2.7 char spacing
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  font-kerning: 2.7;
   color: #FFFFFF;
 }
 p {
+  font-family: 'Bellefair', serif;
   color: #FFFFFF;
 }
-*/
+
 
 .App {
   text-align: center;
