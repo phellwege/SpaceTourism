@@ -141,11 +141,10 @@ p {
 }
 #ExploreCircle {
   background: #FFFFFF;
+  width: 250%;
   border-radius:50%;
-  width: 225%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 #ExploreCircle a h4  {
   color: black;
