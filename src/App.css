@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+#HomeBkg {
+  background-image: url('./static/home/background-home-desktop.jpg');
+}
+#CrewBkg {
+  background-image: url('./static/crew/background-crew-desktop.jpg');
+}
+#TechBkg {
+  background-image: url('./static/technology/background-technology-desktop.jpg');
+}
+#DestBkg {
+  background-image: url('./static/destination/background-destination-desktop.jpg');
+}
