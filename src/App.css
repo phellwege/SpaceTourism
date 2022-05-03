@@ -83,7 +83,7 @@ p {
 }
 #HomeBkg {
   background-image: url('./static/home/background-home-desktop.jpg');
-  height: 100vh;
+  min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100vw;
@@ -102,21 +102,21 @@ p {
 }
 #CrewBkg {
   background-image: url('./static/crew/background-crew-desktop.jpg');
-  height: 100vh;
+  min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100vw;
 }
 #TechBkg {
   background-image: url('./static/technology/background-technology-desktop.jpg');
-  height: 100vh;
+  min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100vw;
 }
 #DestBkg {
   background-image: url('./static/destination/background-destination-desktop.jpg');
-  height: 100vh;
+  min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100vw;
@@ -164,6 +164,28 @@ p {
 }
 #ExploreCircle a h4  {
   color: black;
+}
+.DestWrap {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+  margin-left: 12.5%;
+}
+.DestWrap p {
+  width: 50%;
+  margin-left: 25%;
+}
+.DestInfo {
+  display: flex;
+  justify-content: space-evenly;
+}
+.DestNav ul{
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding-top: 5%;
+  width: 50%;
+  margin-left: 18%;
 }
 @media only screen and (max-width: 400px) {
   #HomeBkg {
