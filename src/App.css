@@ -7,7 +7,7 @@ h1 {
   color: #FFFFFF;
 } 
 h2 {
-  font-family: 'Bellefair', serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 100px;
   color: #FFFFFF;
 }
@@ -17,7 +17,7 @@ h3 {
   color: #FFFFFF;
 }
 h4 {
-  font-family: 'Bellefair', serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 32px;
   color: #FFFFFF;
 }
@@ -124,11 +124,13 @@ p {
   background-blend-mode: lighten;
   backdrop-filter: blur(20px);
   width: 40%;
+  height: 5em;
 }
 #navBarWrap ul {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
+  padding-top: 2%;
 }
 #navBarWrap ul a {
   text-decoration: none;
@@ -146,8 +148,9 @@ p {
 }
 #ExploreCircle {
   background: #FFFFFF;
-  width: 250%;
-  border-radius:50%;
+  padding: 2em;
+  width: 100%;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
 }
