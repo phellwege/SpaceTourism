@@ -14,7 +14,7 @@ export default (props) => {
             <NavBar/>
                 <div className='DestWrap'>
                     <div>
-                        <h5>01 Pick your destination</h5>
+                        <h4><span id='darkText'>01</span> Pick your destination</h4>
                         <div id='DestImg'>
                             <img src={Moon}/>
                         </div>

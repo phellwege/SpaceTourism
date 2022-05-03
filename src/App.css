@@ -187,6 +187,9 @@ p {
   width: 50%;
   margin-left: 18%;
 }
+#darkText {
+  color: #D0D6F9;
+}
 @media only screen and (max-width: 400px) {
   #HomeBkg {
     background-image: url('./static/home/background-home-mobile.jpg');
