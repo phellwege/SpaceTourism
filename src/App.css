@@ -48,23 +48,18 @@ p {
   font-family: 'Bellefair', serif;
   color: #D0D6F9;
 }
-
-
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -75,11 +70,9 @@ p {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -91,6 +84,9 @@ p {
 #HomeBkg {
   background-image: url('./static/home/background-home-desktop.jpg');
   height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vw;
 }
 #HomeWrap {
   display: flex;
@@ -100,14 +96,23 @@ p {
 #CrewBkg {
   background-image: url('./static/crew/background-crew-desktop.jpg');
   height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vw;
 }
 #TechBkg {
   background-image: url('./static/technology/background-technology-desktop.jpg');
   height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vw;
 }
 #DestBkg {
   background-image: url('./static/destination/background-destination-desktop.jpg');
   height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vw;
 }
 #navBarWrap {
   display: flex;
@@ -148,4 +153,18 @@ p {
 }
 #ExploreCircle a h4  {
   color: black;
+}
+@media only screen and (max-width: 400px) {
+  #HomeBkg {
+    background-image: url('./static/home/background-home-mobile.jpg');
+  }
+  #CrewBkg {
+    background-image: url('./static/crew/background-crew-mobile.jpg');
+  }
+  #TechBkg {
+    background-image: url('./static/technology/background-technology-mobile.jpg');
+  }
+  #DestBkg {
+    background-image: url('./static/destination/background-destination-mobile.jpg');
+  }
 }
