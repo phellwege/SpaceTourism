@@ -7,7 +7,7 @@ h1 {
   color: #FFFFFF;
 } 
 h2 {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Bellefair', serif;
   font-size: 100px;
   color: #FFFFFF;
 }
@@ -17,7 +17,7 @@ h3 {
   color: #FFFFFF;
 }
 h4 {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Bellefair', serif;
   font-size: 32px;
   color: #FFFFFF;
 }
@@ -92,6 +92,13 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: 5%;
+}
+#HomeWrap p {
+  text-align: left;
+}
+#HomeWrap h4 {
+  color: #D0D6F9;
 }
 #CrewBkg {
   background-image: url('./static/crew/background-crew-desktop.jpg');
@@ -147,12 +154,13 @@ p {
   color: white;
 }
 #ExploreCircle {
-  background: #FFFFFF;
-  padding: 2em;
+  margin-top: 75%;
+  background-color: #FFFFFF;
+  padding: 2.5em;
   width: 100%;
   border-radius: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 #ExploreCircle a h4  {
   color: black;
