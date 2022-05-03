@@ -1,3 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+h1 {
+  font-family: 'Bellefair', serif;
+  font-size: 150px;
+  color: #FFFFFF;
+} 
+h2 {
+  font-family: 'Bellefair', serif;
+  font-size: 100px;
+  color: #FFFFFF;
+}
+h3 {
+  font-family: 'Bellefair', serif;
+  font-size: 56px;
+  color: #FFFFFF;
+}
+h4 {
+  font-family: 'Bellefair', serif;
+  font-size: 32px;
+  color: #FFFFFF;
+}
+h5 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 25px;
+  letter-spacing: 4.75;
+  color: #D0D6F9;
+}
+#subheading1 {
+  font-family: 'Bellefair', serif;
+  font-size: 28px;
+  color: #FFFFFF;
+}
+#subheading2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2.35;
+  color: #FFFFFF;
+}
+#navText {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2.7;
+  color: #FFFFFF;
+}
+p {
+  font-family: 'Bellefair', serif;
+  color: #D0D6F9;
+}
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +87,65 @@
   to {
     transform: rotate(360deg);
   }
+}
+#HomeBkg {
+  background-image: url('./static/home/background-home-desktop.jpg');
+  height: 100vh;
+}
+#HomeWrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#CrewBkg {
+  background-image: url('./static/crew/background-crew-desktop.jpg');
+  height: 100vh;
+}
+#TechBkg {
+  background-image: url('./static/technology/background-technology-desktop.jpg');
+  height: 100vh;
+}
+#DestBkg {
+  background-image: url('./static/destination/background-destination-desktop.jpg');
+  height: 100vh;
+}
+#navBarWrap {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 2%;
+}
+#navBarLinks {
+  background-blend-mode: lighten;
+  backdrop-filter: blur(20px);
+  width: 40%;
+}
+#navBarWrap ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+#navBarWrap ul a {
+  text-decoration: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  font-kerning: 2.7;
+  color: #FFFFFF;
+}
+#navBarWrap ul a:Hover {
+  text-decoration: underline;
+}
+#navBarWrap ul a:Active {
+  text-decoration: underline;
+  color: white;
+}
+#ExploreCircle {
+  background: #FFFFFF;
+  width: 250%;
+  border-radius:50%;
+  display: flex;
+  justify-content: center;
+}
+#ExploreCircle a h4  {
+  color: black;
 }
