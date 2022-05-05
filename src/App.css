@@ -127,6 +127,10 @@ p {
   width: 100%;
   padding-top: 2%;
 }
+#navBarWrap img {
+  align-self: center;
+  padding-top: 5%;
+}
 #navBarLinks {
   background-blend-mode: lighten;
   backdrop-filter: blur(20px);
@@ -187,7 +191,6 @@ p {
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
-  padding-top: 5%;
   width: 50%;
   margin-left: 18%;
 }

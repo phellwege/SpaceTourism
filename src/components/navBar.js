@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../App.css';
-
+import logo from '../static/shared/logo.svg'
 
 export default (props) => {
     const [isActive, setActive] = useState("false");
@@ -9,7 +9,7 @@ export default (props) => {
     };
     return (
         <div id="navBarWrap">
-            <div>icon</div>
+            <div><img src={logo}/></div>
             <div><p>-------------------------------------</p></div>
             <div id='navBarLinks'>
             <ul >
