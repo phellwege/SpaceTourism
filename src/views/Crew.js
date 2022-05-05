@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import '../App.css';
 import NavBar from '../components/navBar';
-import Engineer from '../static/crew/image-anousheh-ansari.png'
+import data from '../Data/data.json';
 
 export default (props) => {
+    const [index,setIndex]=useState(0);
     return (
         <div id="CrewBkg">
             <NavBar/>
@@ -12,22 +13,18 @@ export default (props) => {
             </h4>
             <div className='CrewWrap'>
                 <div>
-                    {props.title}
-                    {props.name}
-                    {props.desc}
-                    <h5>Flight Engineer</h5>
-                    <h3>Anousheh Ansari</h3>
-                    <p>Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
-                        Ansari was the fourth self-funded space tourist, the first self-funded woman to 
-                        fly to the ISS, and the first Iranian in space.
-                    </p>
+                    <h5>{data.crew[index].role}</h5>
+                    <h3>{data.crew[index].name}</h3>
+                    <p>{data.crew[index].bio}</p>
                     <div>
-                        
+                        <button className={"carousel-button" + (index===0?" active-button":"")} onClick={() => {setIndex(0)}}></button>
+                        <button className={"carousel-button" + (index===1?" active-button":"")} onClick={() => {setIndex(1)}}></button>
+                        <button className={"carousel-button" + (index===2?" active-button":"")} onClick={() => {setIndex(2)}}></button>
+                        <button className={"carousel-button" + (index===3?" active-button":"")} onClick={() => {setIndex(3)}}></button>
                     </div>
                 </div>
                 <div>
-                    {props.crewImg}
-                    <img src={Engineer}/>
+                    <img className="crew-image" src={data.crew[index].images.webp} alt={data.crew[index].name} />
                 </div>
             </div>
         </div>

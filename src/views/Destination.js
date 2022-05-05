@@ -2,10 +2,7 @@ import React, { useEffect, useState } from 'react'
 import '../App.css';
 import NavBar from '../components/navBar';
 import Moon from '../static/destination/image-moon.png'
-import DestMoon from '../components/DestMoon';
-import DestMars from '../components/DestMars';
-import DestTitan from '../components/DestTitan';
-import DestEuropa from '../components/DestEuropa';
+import data from '../Data/data.json';
 
 export default (props) => {
 

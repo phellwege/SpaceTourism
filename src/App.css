@@ -137,7 +137,7 @@ p {
 }
 #navBarWrap img {
   align-self: center;
-  padding-top: 5%;
+  padding-top: 15%;
 }
 #navBarLinks {
   background-blend-mode: lighten;
@@ -232,6 +232,26 @@ p {
 }
 #darkText {
   color: #D0D6F9;
+}
+.carousel-button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.17;
+  margin-right: 24px;
+}
+
+.carousel-button:hover {
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.active-button {
+  background: #FFFFFF;
+  opacity: 1;
 }
 @media only screen and (max-width: 400px) {
   #HomeBkg {
