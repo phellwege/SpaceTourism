@@ -195,6 +195,21 @@ p {
   text-decoration: underline;
   cursor: pointer;
 }
+.CrewWrap {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+  margin-left: 12.5%;
+}
+.TechWrap {
+  display: flex;
+  justify-content: space-around;
+  width: 75%;
+  margin-left: 12.5%;
+}
+.TechLeft {
+  display: flex;
+}
 #darkText {
   color: #D0D6F9;
 }

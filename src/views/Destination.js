@@ -24,10 +24,10 @@ export default (props) => {
                     <div>
                         <div className='DestNav'>
                             <ul>
-                                <li  id='navText' onClick={props.Moon}>Moon</li>
-                                <li  id='navText' onClick={props.Mars}>Mars</li>
-                                <li  id='navText' onClick={props.Europa}>Europa</li>
-                                <li  id='navText' onClick={props.Titan}>Titan</li>
+                                <li  id='navText' className='Moon' onClick={props.Moon}>Moon</li>
+                                <li  id='navText' className='Mars' onClick={props.Mars}>Mars</li>
+                                <li  id='navText' className='Europa' onClick={props.Europa}>Europa</li>
+                                <li  id='navText' className='Titan' onClick={props.Titan}>Titan</li>
                             </ul>
                         </div>
                         <div>
