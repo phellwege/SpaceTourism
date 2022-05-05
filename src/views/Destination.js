@@ -12,11 +12,13 @@ export default (props) => {
     return (
         <div id="DestBkg">
             <NavBar/>
+            <h4 id='DestHeader'>
+                <span id='darkText'>01</span> Pick your destination
+            </h4>
                 <div className='DestWrap'>
                     <div>
-                        <h4><span id='darkText'>01</span> Pick your destination</h4>
                         <div id='DestImg'>
-                            <img src={Moon}/>
+                            <img src={Moon} alt='Planet Picture'/>
                         </div>
                     </div>
                     <div>
@@ -34,7 +36,6 @@ export default (props) => {
                             regain perspective and come back refreshed. While you’re there, take in some history 
                             by visiting the Luna 2 and Apollo 11 landing sites.</p>
                         </div>
-                    
                     <div className='DestInfo'>
                         <div>
                             <h5>Avg. distance</h5>
