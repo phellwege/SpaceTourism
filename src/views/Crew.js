@@ -24,7 +24,7 @@ export default (props) => {
                     </div>
                 </div>
                 <div>
-                    <img className="crew-image" src={data.crew[index].images.webp} alt={data.crew[index].name} />
+                    <img className="crew-image" src={data.crew[index].images.png} alt={data.crew[index].name} />
                 </div>
             </div>
         </div>
