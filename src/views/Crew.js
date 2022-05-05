@@ -7,7 +7,7 @@ export default (props) => {
     const [index,setIndex]=useState(0);
     return (
         <div id="CrewBkg">
-            <NavBar/>
+            <NavBar  active={2}/>
             <h4 id='DestHeader'>
                 <span id='darkText'>02</span> MEET YOUR CREW
             </h4>

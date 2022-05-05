@@ -1,46 +1,43 @@
 import React, { useEffect, useState } from 'react'
 import '../App.css';
 import NavBar from '../components/navBar';
-import Moon from '../static/destination/image-moon.png'
 import data from '../Data/data.json';
 
 export default (props) => {
-
+    const [destination,setDestination] = useState(0);
     return (
         <div id="DestBkg">
-            <NavBar/>
+            <NavBar active={1}/>
             <h4 id='DestHeader'>
                 <span id='darkText'>01</span> Pick your destination
             </h4>
                 <div className='DestWrap'>
                     <div>
                         <div id='DestImg'>
-                            <img src={Moon} alt='Planet Picture'/>
+                        <img className="destination-image" src={data.destinations[destination].images.webp} alt={data.destinations[destination].name} />
                         </div>
                     </div>
                     <div>
-                        <div className='DestNav'>
-                            <ul>
-                                <li  id='navText' className='Moon' onClick={props.Moon}>Moon</li>
-                                <li  id='navText' className='Mars' onClick={props.Mars}>Mars</li>
-                                <li  id='navText' className='Europa' onClick={props.Europa}>Europa</li>
-                                <li  id='navText' className='Titan' onClick={props.Titan}>Titan</li>
+                        <div className='DestNav' >
+                            <ul id='navText'>
+                                <li className={"destination-option" + (destination===0?" active-destination":"")} onClick={() => {setDestination(0)}}>Moon</li>
+                                <li className={"destination-option" + (destination===1?" active-destination":"")} onClick={() => {setDestination(1)}}>Mars</li>
+                                <li className={"destination-option" + (destination===2?" active-destination":"")} onClick={() => {setDestination(2)}}>Europa</li>
+                                <li className={"destination-option" + (destination===3?" active-destination":"")} onClick={() => {setDestination(3)}}>Titan</li>
                             </ul>
                         </div>
                         <div>
-                        <h2>Moon</h2>
-                            <p>See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-                            regain perspective and come back refreshed. While you’re there, take in some history 
-                            by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                        <h2>{data.destinations[destination].name}</h2>
+                            <p>{data.destinations[destination].description}</p>
                         </div>
                     <div className='DestInfo'>
                         <div>
                             <h5>Avg. distance</h5>
-                            <h4>384,400 km</h4>
+                            <h4>{data.destinations[destination].distance}</h4>
                         </div>
                         <div>
                             <h5>Est. travel time</h5>
-                            <h4>3 days</h4>
+                            <h4>{data.destinations[destination].travel}</h4>
                         </div>
                     </div></div>
                 </div>

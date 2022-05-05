@@ -221,15 +221,7 @@ p {
 .TechLeft {
   display: flex;
 }
-.TechBtn li{
-  background-color: white;
-  border-radius: 50%;
-  list-style-type: none;
-  height: 100%;
-  width: 40%;
-  padding: 1.5em;
-  margin: .75em;
-}
+
 #darkText {
   color: #D0D6F9;
 }
@@ -242,15 +234,57 @@ p {
   opacity: 0.17;
   margin-right: 24px;
 }
-
 .carousel-button:hover {
   background: #FFFFFF;
   mix-blend-mode: normal;
   opacity: 0.5;
 }
-
 .active-button {
   background: #FFFFFF;
+  opacity: 1;
+}
+.active {
+  border-bottom: 2px white solid;
+}
+.active:hover {
+  border-bottom: 2px white solid;
+  opacity: 1;
+}
+.technology-buttons {
+  margin-right: 5.55vw;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.technology-button {
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  mix-blend-mode: normal;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  font-family: Bellefair;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+}
+.technology-button:hover {
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  opacity: 0.25;
+}
+.active-technology {
+  color: #0B0D17;
+  background: #FFFFFF;
+  opacity: 1;
+}
+.active-technology:hover {
   opacity: 1;
 }
 @media only screen and (max-width: 400px) {

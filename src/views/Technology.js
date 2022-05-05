@@ -2,35 +2,39 @@ import React, { useEffect, useState } from 'react'
 import '../App.css';
 import NavBar from '../components/navBar';
 import data from '../Data/data.json';
-import SpaceCraft from '../static/technology/image-launch-vehicle-portrait.jpg'
+
 
 export default () => {
+    const [index,setIndex]=useState(0);
     return (
         <div id="TechBkg">
-            <NavBar/>
+            <NavBar  active={3}/>
             <h4 id='DestHeader'>
                 <span id='darkText'>03</span> SPACE LAUNCH 101
             </h4>
             <div className='TechWrap'>
                 <div className='TechLeft'>
                     <div>
-                        <ul className='TechBtn'>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                        </ul>
+                        <div className="technology-buttons">
+                            <button className={"technology-button" + (index===0?" active-technology":"")} onClick={() => {setIndex(0)}}>
+                                1
+                            </button>
+                            <button className={"technology-button" + (index===1?" active-technology":"")} onClick={() => {setIndex(1)}}>
+                                2
+                            </button>
+                            <button className={"technology-button" + (index===2?" active-technology":"")} onClick={() => {setIndex(2)}}>
+                                3
+                            </button>
+                        </div>
                     </div>
                     <div>
                         <h5>The Terminology...</h5>
-                        <h3>Launch Vehicle</h3>
-                        <p>A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
-                            payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
-                            WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
-                            it's quite an awe-inspiring sight on the launch pad!</p>
+                        <h3>{data.technology[index].name}</h3>
+                        <p>{data.technology[index].description}</p>
                     </div>
                 </div>
                 <div>
-                    <img src={SpaceCraft}/>
+                <img className="technology-image" src={data.technology[index].images.portrait} alt="technology" />
                 </div>
             </div>
         </div>

@@ -5,7 +5,7 @@ import NavBar from '../components/navBar';
 export default () => {
     return (
         <div id="HomeBkg">
-            <NavBar/>
+            <NavBar  active={0}/>
             <div id='HomeWrap'>
                 <div>
                     <h4>So, you want to travel to</h4>
