@@ -84,6 +84,7 @@ p {
 #HomeBkg {
   background-image: url('./static/home/background-home-desktop.jpg');
   min-height: 100vh;
+  padding-top: 5%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100vw;
@@ -103,6 +104,7 @@ p {
 #CrewBkg {
   background-image: url('./static/crew/background-crew-desktop.jpg');
   min-height: 100vh;
+  padding-top: 5%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100vw;
@@ -110,6 +112,7 @@ p {
 #TechBkg {
   background-image: url('./static/technology/background-technology-desktop.jpg');
   min-height: 100vh;
+  padding-top: 5%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100vw;
@@ -117,6 +120,7 @@ p {
 #DestBkg {
   background-image: url('./static/destination/background-destination-desktop.jpg');
   min-height: 100vh;
+  padding-top: 5%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100vw;
@@ -126,6 +130,10 @@ p {
   justify-content: space-around;
   width: 100%;
   padding-top: 2%;
+}
+.sticky {
+  position: fixed;
+  top: 0;
 }
 #navBarWrap img {
   align-self: center;

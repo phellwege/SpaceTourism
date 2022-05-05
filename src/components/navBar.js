@@ -8,7 +8,7 @@ export default (props) => {
         setActive(!isActive)
     };
     return (
-        <div id="navBarWrap">
+        <div id="navBarWrap" className="sticky">
             <div><img src={logo}/></div>
             <div><p>-------------------------------------</p></div>
             <div id='navBarLinks'>
