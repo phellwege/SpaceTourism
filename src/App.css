@@ -171,6 +171,9 @@ p {
   width: 75%;
   margin-left: 12.5%;
 }
+.DestWrap h4 {
+  text-align: left;
+}
 .DestWrap p {
   width: 50%;
   margin-left: 25%;
