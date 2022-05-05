@@ -204,11 +204,19 @@ p {
 .TechWrap {
   display: flex;
   justify-content: space-around;
-  width: 75%;
-  margin-left: 12.5%;
+  width: 80%;
+  margin-left: 10%;
 }
 .TechLeft {
   display: flex;
+}
+.TechBtn li{
+  background-color: white;
+  border-radius: 50%;
+  list-style-type: none;
+  height: 100%;
+  padding: 1.5em;
+  margin: .75em;
 }
 #darkText {
   color: #D0D6F9;

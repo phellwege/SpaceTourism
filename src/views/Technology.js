@@ -13,7 +13,7 @@ export default () => {
             <div className='TechWrap'>
                 <div className='TechLeft'>
                     <div>
-                        <ul>
+                        <ul className='TechBtn'>
                             <li>1</li>
                             <li>2</li>
                             <li>3</li>
