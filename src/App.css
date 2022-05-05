@@ -215,6 +215,7 @@ p {
   border-radius: 50%;
   list-style-type: none;
   height: 100%;
+  width: 40%;
   padding: 1.5em;
   margin: .75em;
 }
