@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import '../App.css';
 import NavBar from '../components/navBar';
-import data from '../Data/data.json';
+import data from '../Data/data';
+
 
 export default (props) => {
+    
     const [index,setIndex]=useState(0);
     return (
         <div id="CrewBkg">
@@ -23,8 +25,9 @@ export default (props) => {
                         <button className={"carousel-button" + (index===3?" active-button":"")} onClick={() => {setIndex(3)}}></button>
                     </div>
                 </div>
+                
                 <div>
-                    <img className="crew-image" src={`${data.crew[index].images.webp}`} alt={data.crew[index].name} />
+                    <img className="crew-image" src={data.crew[index].images.webp} alt={data.crew[index].name} />
                 </div>
             </div>
         </div>

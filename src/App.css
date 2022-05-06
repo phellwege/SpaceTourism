@@ -159,7 +159,8 @@ p {
   color: #FFFFFF;
 }
 #navBarWrap ul a:Hover {
-  text-decoration: underline;
+  border-bottom: 2px #ffffff solid;
+  mix-blend-mode: normal;
 }
 #navBarWrap ul a:Active {
   text-decoration: underline;

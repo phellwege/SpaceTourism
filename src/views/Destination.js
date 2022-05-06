@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../App.css';
 import NavBar from '../components/navBar';
-import data from '../Data/data.json';
+import data from '../Data/data';
 
 export default (props) => {
     const [destination,setDestination] = useState(0);
