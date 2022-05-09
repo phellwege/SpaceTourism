@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { useNavigate } from "react-router-dom";
 import '../App.css';
 import logo from '../static/shared/logo.svg'
 
 export default (props) => {
-    const navigate=useNavigate();
     const {active}=props;
     return (
         <div id="navBarWrap" className="sticky">
