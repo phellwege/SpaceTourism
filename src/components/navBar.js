@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import '../App.css';
 import logo from '../static/shared/logo.svg'
-
+import Hamburger from '../static/shared/icon-hamburger.svg'
 export default (props) => {
     const {active}=props;
     return (
@@ -15,6 +15,9 @@ export default (props) => {
                 <li><a href='/crew' id='navText'  className={"links"+(active===2?" active":"")}><span id='darkText'>02</span> Crew</a></li>
                 <li><a href='/tech' id='navText'  className={"links"+(active===3?" active":"")}><span id='darkText'>03</span> Technology</a></li>
             </ul>
+            </div>
+            <div id='hamMenu'>
+                <img src={Hamburger}/>
             </div>
         </div>
     )

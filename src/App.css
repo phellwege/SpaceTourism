@@ -296,6 +296,9 @@ p {
 #crewBtn {
   padding-top: 5%;
 }
+#hamMenu {
+  display: none;
+}
 @media only screen and (max-width: 400px) {
   #HomeBkg {
     background-image: url('./static/home/background-home-mobile.jpg');
@@ -353,5 +356,12 @@ p {
   .DestWrap p {
     width: 80%;
     margin-left:10%;
+  }
+  #navBarLinks {
+    display: none;
+  }
+  #hamMenu {
+    display: block;
+    margin-top: 5%;
   }
 }
