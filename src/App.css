@@ -296,7 +296,7 @@ p {
 #crewBtn {
   padding-top: 5%;
 }
-#hamMenu {
+.Ham {
   display: none;
 }
 @media only screen and (max-width: 400px) {
@@ -360,8 +360,17 @@ p {
   #navBarLinks {
     display: none;
   }
-  #hamMenu {
-    display: block;
+  .Ham {
     margin-top: 5%;
+    display: flex;
+  }
+  .navBar ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .navBar {
+    background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(81.5485px);
+        width: 67.73vw;
   }
 }
