@@ -29,7 +29,7 @@ export default () => {
                         </div>
                     </div>
                     <div>
-                        <h5>The Terminology...</h5>
+                        <p>The Terminology...</p>
                         <h3>{data.technology[index].name}</h3>
                         <p>{data.technology[index].description}</p>
                     </div>

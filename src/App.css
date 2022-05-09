@@ -173,7 +173,7 @@ p {
   display: flex;
   justify-content: space-around;
 }
-#ExploreCircle a h4  {
+#ExploreCircle h4  {
   color: black;
 }
 .DestWrap {
