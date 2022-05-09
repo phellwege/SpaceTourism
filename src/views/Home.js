@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../App.css';
 import NavBar from '../components/navBar';
 
+
 export default () => {
     return (
         <div id="HomeBkg">
@@ -17,7 +18,11 @@ export default () => {
                 </div>
                 <div>
                     <div id='ExploreCircle'>
-                            <h4>EXPLORE</h4>
+                        <h4>
+                            <a href='/destination'>
+                            EXPLORE
+                            </a>
+                        </h4>
                     </div>
                 </div>
             </div>

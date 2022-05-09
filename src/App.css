@@ -158,12 +158,10 @@ p {
   font-kerning: 2.7;
   color: #FFFFFF;
 }
-
 #navBarWrap ul a:Hover {
   border-bottom: 2px #ffffff solid;
   mix-blend-mode: normal;
 }
-
 #ExploreCircle {
   margin-top: 5%;
   background-color: #FFFFFF;
@@ -173,8 +171,9 @@ p {
   display: flex;
   justify-content: space-around;
 }
-#ExploreCircle h4  {
+#ExploreCircle h4 a{
   color: black;
+  text-decoration: none;
 }
 .DestWrap {
   display: flex;
@@ -221,7 +220,6 @@ p {
   display: flex;
   width: 50%;
 }
-
 #darkText {
   color: #D0D6F9;
 }
@@ -301,14 +299,22 @@ p {
 @media only screen and (max-width: 400px) {
   #HomeBkg {
     background-image: url('./static/home/background-home-mobile.jpg');
+    display: flex;
+    flex-direction: column;
   }
   #CrewBkg {
     background-image: url('./static/crew/background-crew-mobile.jpg');
+    display: flex;
+    flex-direction: column;
   }
   #TechBkg {
     background-image: url('./static/technology/background-technology-mobile.jpg');
+    display: flex;
+    flex-direction: column;
   }
   #DestBkg {
     background-image: url('./static/destination/background-destination-mobile.jpg');
+    display: flex;
+    flex-direction: column;
   }
 }
