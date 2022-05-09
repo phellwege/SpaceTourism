@@ -340,4 +340,18 @@ p {
   .DestWrap {
     flex-direction: column;
   }
+  #DestImg img{
+    width: 75%;
+  }
+  .DestNav {
+    margin-top: 15%;
+  }
+  .DestNav ul{
+    width: 80%;
+    margin-left: 0%;
+  }
+  .DestWrap p {
+    width: 80%;
+    margin-left:10%;
+  }
 }
