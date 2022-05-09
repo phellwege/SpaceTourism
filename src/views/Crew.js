@@ -18,14 +18,14 @@ export default (props) => {
                     <h5>{data.crew[index].role}</h5>
                     <h3>{data.crew[index].name}</h3>
                     <p>{data.crew[index].bio}</p>
-                    <div>
+                    <div id='crewBtn'>
                         <button className={"carousel-button" + (index===0?" active-button":"")} onClick={() => {setIndex(0)}}></button>
                         <button className={"carousel-button" + (index===1?" active-button":"")} onClick={() => {setIndex(1)}}></button>
                         <button className={"carousel-button" + (index===2?" active-button":"")} onClick={() => {setIndex(2)}}></button>
                         <button className={"carousel-button" + (index===3?" active-button":"")} onClick={() => {setIndex(3)}}></button>
                     </div>
                 </div>
-                <div>
+                <div id='crewRight'>
                     <img className="crew-image" src={crew} alt={data.crew[index].name} />
                 </div>
             </div>

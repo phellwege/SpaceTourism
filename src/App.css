@@ -291,6 +291,13 @@ p {
 }
 #crewLeft {
   width: 50%;
+  overflow: hidden;
+}
+#crewRight {
+  width: 50%;
+}
+#crewBtn {
+  padding-top: 5%;
 }
 @media only screen and (max-width: 400px) {
   #HomeBkg {
