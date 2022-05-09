@@ -4,7 +4,7 @@ import NavBar from '../components/navBar';
 import data from '../Data/data';
 
 
-export default (props) => {
+export default () => {
     const [index,setIndex]=useState(0);
     const crew = require('../static/crew/'+ data.crew[index].images.webp + '.webp');
     return (

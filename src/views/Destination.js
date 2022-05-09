@@ -3,7 +3,7 @@ import '../App.css';
 import NavBar from '../components/navBar';
 import data from '../Data/data';
 
-export default (props) => {
+export default () => {
     const [destination,setDestination] = useState(0);
     const planet = require('../static/destination/'+data.destinations[destination].images.webp +'.webp');
     return (
