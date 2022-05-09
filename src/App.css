@@ -299,22 +299,45 @@ p {
 @media only screen and (max-width: 400px) {
   #HomeBkg {
     background-image: url('./static/home/background-home-mobile.jpg');
-    display: flex;
+    padding-top: 5%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vh;
+  }
+  #HomeWrap {
     flex-direction: column;
   }
   #CrewBkg {
     background-image: url('./static/crew/background-crew-mobile.jpg');
-    display: flex;
+    padding-top: 5%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vh;
+  }
+  .CrewWrap {
     flex-direction: column;
+  }
+  #crewLeft {
+    width: 100%;
   }
   #TechBkg {
     background-image: url('./static/technology/background-technology-mobile.jpg');
-    display: flex;
+    padding-top: 5%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vh;
+  }
+  .TechWrap {
     flex-direction: column;
   }
   #DestBkg {
     background-image: url('./static/destination/background-destination-mobile.jpg');
-    display: flex;
+    padding-top: 5%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vh;
+  }
+  .DestWrap {
     flex-direction: column;
   }
 }

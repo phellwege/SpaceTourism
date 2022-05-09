@@ -7,7 +7,7 @@ export default (props) => {
     return (
         <div id="navBarWrap" className="sticky">
             <div><a href='/'><img src={logo} alt='Logo'/></a></div>
-            <div><p>-------------------------------------</p></div>
+            <div></div>
             <div id='navBarLinks'>
             <ul >
                 <li><a href='/' id='navText' className={"links"+(active===0?" active":"")}><span id='darkText'>00</span> Home</a></li>
