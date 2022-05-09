@@ -6,6 +6,7 @@ import data from '../Data/data';
 
 export default () => {
     const [index,setIndex]=useState(0);
+    const tech = require('../static/technology/'+ data.technology[index].images.portrait +'.jpg');
     return (
         <div id="TechBkg">
             <NavBar  active={3}/>
@@ -34,7 +35,7 @@ export default () => {
                     </div>
                 </div>
                 <div>
-                <img className="technology-image" src={data.technology[index].images.portrait} alt="technology" />
+                <img className="technology-image" src={tech} alt="technology" />
                 </div>
             </div>
         </div>

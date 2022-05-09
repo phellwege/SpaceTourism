@@ -5,8 +5,8 @@ import data from '../Data/data';
 
 
 export default (props) => {
-    
     const [index,setIndex]=useState(0);
+    const crew = require('../static/crew/'+ data.crew[index].images.webp + '.webp');
     return (
         <div id="CrewBkg">
             <NavBar  active={2}/>
@@ -27,7 +27,7 @@ export default (props) => {
                 </div>
                 
                 <div>
-                    <img className="crew-image" src={data.crew[index].images.webp} alt={data.crew[index].name} />
+                    <img className="crew-image" src={crew} alt={data.crew[index].name} />
                 </div>
             </div>
         </div>

@@ -5,6 +5,7 @@ import data from '../Data/data';
 
 export default (props) => {
     const [destination,setDestination] = useState(0);
+    const planet = require('../static/destination/'+data.destinations[destination].images.webp +'.webp');
     return (
         <div id="DestBkg">
             <NavBar active={1}/>
@@ -14,7 +15,7 @@ export default (props) => {
                 <div className='DestWrap'>
                     <div>
                         <div id='DestImg'>
-                        <img className="destination-image" src={data.destinations[destination].images.webp} alt={data.destinations[destination].name} />
+                        <img className="destination-image" src={planet} alt={data.destinations[destination].name} />
                         </div>
                     </div>
                     <div>
