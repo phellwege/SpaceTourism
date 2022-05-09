@@ -221,6 +221,7 @@ p {
 }
 .TechLeft {
   display: flex;
+  width: 50%;
 }
 
 #darkText {
@@ -287,6 +288,9 @@ p {
 }
 .active-technology:hover {
   opacity: 1;
+}
+#crewLeft {
+  width: 50%;
 }
 @media only screen and (max-width: 400px) {
   #HomeBkg {

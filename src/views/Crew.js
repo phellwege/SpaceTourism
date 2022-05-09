@@ -14,7 +14,7 @@ export default (props) => {
                 <span id='darkText'>02</span> MEET YOUR CREW
             </h4>
             <div className='CrewWrap'>
-                <div>
+                <div id='crewLeft'>
                     <h5>{data.crew[index].role}</h5>
                     <h3>{data.crew[index].name}</h3>
                     <p>{data.crew[index].bio}</p>
@@ -25,7 +25,6 @@ export default (props) => {
                         <button className={"carousel-button" + (index===3?" active-button":"")} onClick={() => {setIndex(3)}}></button>
                     </div>
                 </div>
-                
                 <div>
                     <img className="crew-image" src={crew} alt={data.crew[index].name} />
                 </div>
