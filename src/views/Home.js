@@ -17,9 +17,7 @@ export default () => {
                 </div>
                 <div>
                     <div id='ExploreCircle'>
-                        <a href='/'>
                             <h4>EXPLORE</h4>
-                        </a>
                     </div>
                 </div>
             </div>

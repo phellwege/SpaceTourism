@@ -8,7 +8,7 @@ export default (props) => {
     const {active}=props;
     return (
         <div id="navBarWrap" className="sticky">
-            <div><img src={logo} alt='Logo'/></div>
+            <div><a href='/'><img src={logo} alt='Logo'/></a></div>
             <div><p>-------------------------------------</p></div>
             <div id='navBarLinks'>
             <ul >

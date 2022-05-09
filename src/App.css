@@ -158,14 +158,12 @@ p {
   font-kerning: 2.7;
   color: #FFFFFF;
 }
+
 #navBarWrap ul a:Hover {
   border-bottom: 2px #ffffff solid;
   mix-blend-mode: normal;
 }
-#navBarWrap ul a:Active {
-  text-decoration: underline;
-  color: white;
-}
+
 #ExploreCircle {
   margin-top: 5%;
   background-color: #FFFFFF;
@@ -247,6 +245,7 @@ p {
 }
 .active {
   border-bottom: 2px white solid;
+  font-weight: bold;
 }
 .active:hover {
   border-bottom: 2px white solid;
