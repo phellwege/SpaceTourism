@@ -368,9 +368,36 @@ p {
     display: flex;
     flex-direction: column;
   }
-  .navBar {
+  .navBar button {
+    position: fixed;
+    z-index: 10;
+  }
+  .menuNav {
+    overflow-y: scroll;
+    list-style: none;
+    position: fixed;
+    top: 7.5%;
+    right: 0;
+    bottom: 0;
+    height: 45vh;
+    width: 0;
+    overflow: hidden;
+    max-width: 290px;
+    z-index: 9;
+    transition: .75s;
+    border-top-left-radius: 2.5em;
+    border-bottom-left-radius: 2.5em;
     background: rgba(255, 255, 255, 0.04);
-        backdrop-filter: blur(81.5485px);
-        width: 67.73vw;
+    backdrop-filter: blur(81.5485px);
+  }
+  .menuNav.showMenu {
+    width: 60%;
+  }
+  .menuNav li:first-child {
+    margin-top: 3.5rem;
+  }
+  .navBar button {
+    background: transparent;
+    border: none;
   }
 }
