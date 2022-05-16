@@ -315,13 +315,23 @@ p {
     padding-top: 5%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100vh;
+    background-size: 110vh;
+  }
+  #DestHeader {
+    margin-top: 18%;
   }
   .CrewWrap {
     flex-direction: column;
   }
   #crewLeft {
     width: 100%;
+  }
+  #crewRight img {
+    width: 100%;
+  }
+  #crewRight {
+    display: flex;
+    align-self: center;
   }
   #TechBkg {
     background-image: url('./static/technology/background-technology-mobile.jpg');
