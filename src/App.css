@@ -333,6 +333,10 @@ p {
   .TechWrap {
     flex-direction: column;
   }
+  .technology-image {
+    width:80%;
+    align-self: center;
+  }
   #DestBkg {
     background-image: url('./static/destination/background-destination-mobile.jpg');
     padding-top: 5%;
