@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router } from '@reach/router';
+import { Link, Route, Routes } from 'react-router-dom';
 import Home from './views/Home';
 import Crew from './views/Crew';
 import Tech from './views/Technology';
@@ -10,12 +10,12 @@ function App() {
   return (
     <div className="App">
       <React.Fragment>
-          <Router>
-            <Home path="/"/>
-            <Crew path='/crew'/>
-            <Tech path='/tech'/>
-            <Dest path='/destination'/>
-          </Router>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/crew" element={<Crew />} />
+          <Route exact path="/tech" element={<Tech />} />
+          <Route exact path="/destination" element={<Dest />} />
+        </Routes>
       </React.Fragment>
     </div>
   );
