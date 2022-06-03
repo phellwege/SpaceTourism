@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../App.css';
 import NavBar from '../components/navBar';
-
+import { Link } from "react-router-dom";
 
 export default () => {
     return (
@@ -19,9 +19,9 @@ export default () => {
                 <div>
                     <div id='ExploreCircle'>
                         <h4>
-                            <a href='/destination'>
+                            <Link to='/destination'>
                             EXPLORE
-                            </a>
+                            </Link>
                         </h4>
                     </div>
                 </div>

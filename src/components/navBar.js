@@ -3,7 +3,7 @@ import '../App.css';
 import logo from '../static/shared/logo.svg';
 import Hamburger from '../static/shared/icon-hamburger.svg';
 import close from '../static/shared/icon-close.svg';
-
+import { Link } from "react-router-dom";
 export default (props) => {
         const [navbarOpen, setNavbarOpen] = useState(false)
         const handleToggle = () => {
@@ -19,10 +19,10 @@ export default (props) => {
             <div></div>
             <div id='navBarLinks'>
             <ul >
-                <li><a href='/' id='navText' className={"links"+(active===0?" active":"")}><span id='darkText'>00</span> Home</a></li>
-                <li><a href='/destination' id='navText'  className={"links"+(active===1?" active":"")}><span id='darkText'>01</span> Destination</a></li>
-                <li><a href='/crew' id='navText'  className={"links"+(active===2?" active":"")}><span id='darkText'>02</span> Crew</a></li>
-                <li><a href='/tech' id='navText'  className={"links"+(active===3?" active":"")}><span id='darkText'>03</span> Technology</a></li>
+                <li><Link to='/' id='navText' className={"links"+(active===0?" active":"")}><span id='darkText'>00</span> Home</Link></li>
+                <li><Link to='/destination' id='navText'  className={"links"+(active===1?" active":"")}><span id='darkText'>01</span> Destination</Link></li>
+                <li><Link to='/crew' id='navText'  className={"links"+(active===2?" active":"")}><span id='darkText'>02</span> Crew</Link></li>
+                <li><Link to='/tech' id='navText'  className={"links"+(active===3?" active":"")}><span id='darkText'>03</span> Technology</Link></li>
             </ul>
             </div>
             <div className='Ham'>
@@ -34,10 +34,10 @@ export default (props) => {
                         )}
                         </button>
                             <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
-                                <li><a class="active" href="/" onClick={() => closeMenu()}><span id='darkText'>00</span> Home</a></li>
-                                <li><a href="/destination"  onClick={() => closeMenu()}><span id='darkText'>01</span> Destination</a></li>
-                                <li><a href="/crew" onClick={() => closeMenu()}><span id='darkText'>02</span> Crew</a></li>
-                                <a href='/tech' onClick={() => closeMenu()}><span id='darkText'>03</span> Technology</a>
+                                <li><Link class="active" to="/" onClick={() => closeMenu()}><span id='darkText'>00</span> Home</Link></li>
+                                <li><Link to="/destination"  onClick={() => closeMenu()}><span id='darkText'>01</span> Destination</Link></li>
+                                <li><Link to="/crew" onClick={() => closeMenu()}><span id='darkText'>02</span> Crew</Link></li>
+                                <Link to='/tech' onClick={() => closeMenu()}><span id='darkText'>03</span> Technology</Link>
                             </ul>
                     </nav>
                 </div>
