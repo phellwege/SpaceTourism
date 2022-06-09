@@ -82,7 +82,7 @@ In the future I would implement a database instead of a JSON file. It would have
 
 ## Author
 
-- Website - [Peter Hellwege](https://peters-portfolio.net)
+- Website - [Peter Hellwege](http://peters-portfolio.net/)
 - Frontend Mentor - [@phellwege](https://www.frontendmentor.io/profile/phellwege)
 
 
